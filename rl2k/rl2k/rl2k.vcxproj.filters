@@ -34,6 +34,27 @@
     <Filter Include="Source Files\ECS\NewFilter1">
       <UniqueIdentifier>{0e68f19a-6aa4-45f7-bcb7-9ae9d6fb9f4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{17457c94-8b6d-4949-a661-78ba42966389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\item">
+      <UniqueIdentifier>{b180d352-36d5-43b6-bf5b-1703c3e5c7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{c736e55e-07dc-4a3b-b364-070bcfd59f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\font">
+      <UniqueIdentifier>{d879fac6-8965-459f-b033-78fcf7455798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\events">
+      <UniqueIdentifier>{85c27474-70b2-4008-ae31-973f2b4a34ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{2e87d0db-d042-4f43-91f6-e23a42aabcca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\graphics">
+      <UniqueIdentifier>{736bc407-c3e4-4021-bbda-68ec37037306}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -95,6 +116,69 @@
     </ClCompile>
     <ClCompile Include="ECS\blueprints\Spawner.cpp">
       <Filter>Source Files\ECS\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="util\ExpressionParser.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Navigator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Random.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Timer.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="item\Item.cpp">
+      <Filter>Source Files\item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\ItemFactory.cpp">
+      <Filter>Source Files\item</Filter>
+    </ClCompile>
+    <ClCompile Include="item\Wieldable.cpp">
+      <Filter>Source Files\item</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GBase.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GButton.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GMenu.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GMenuItem.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GPanel.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="gui\GWidget.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="font\GFont.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="font\GMessage.cpp">
+      <Filter>Source Files\font</Filter>
+    </ClCompile>
+    <ClCompile Include="events\InputMapper.cpp">
+      <Filter>Source Files\events</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\GameInstance.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\GameWindow.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\graphics\Sprite.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\graphics\SpriteBatch.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\graphics\Texture.cpp">
+      <Filter>Source Files\engine\graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +244,78 @@
     </ClInclude>
     <ClInclude Include="ECS\blueprints\Spawner.h">
       <Filter>Source Files\ECS\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="util\ExpressionParser.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Navigator.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Random.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Timer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="item\Item.h">
+      <Filter>Source Files\item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\ItemFactory.h">
+      <Filter>Source Files\item</Filter>
+    </ClInclude>
+    <ClInclude Include="item\Wieldable.h">
+      <Filter>Source Files\item</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GBase.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GButton.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GMenu.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GMenuItem.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GPanel.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="gui\GWidget.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="font\GFont.h">
+      <Filter>Source Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="font\GMessage.h">
+      <Filter>Source Files\font</Filter>
+    </ClInclude>
+    <ClInclude Include="events\Custom_Events.h">
+      <Filter>Source Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="events\GameEvent.h">
+      <Filter>Source Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="events\InputMapper.h">
+      <Filter>Source Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="events\KeyMapping.h">
+      <Filter>Source Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\GameInstance.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\GameWindow.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\graphics\Sprite.h">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\graphics\SpriteBatch.h">
+      <Filter>Source Files\engine\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\graphics\Texture.h">
+      <Filter>Source Files\engine\graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

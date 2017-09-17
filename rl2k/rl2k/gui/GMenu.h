@@ -38,6 +38,6 @@ public:
 	bool open = true;
 
 
-	std::function<void()> onLoad(vector<T*> collection);
+	//std::function<void()> onLoad(vector<T*> collection);
 };
 

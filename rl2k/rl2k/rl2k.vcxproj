@@ -69,13 +69,20 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>D:\Documents\csfiles\libraries\C++\rapidxml-1.13;D:\Documents\csfiles\libraries\C++\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Documents\csfiles\libraries\C++\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -124,6 +131,23 @@
     <ClCompile Include="ECS\Components\Items\GroundItem.cpp" />
     <ClCompile Include="ECS\Components\Items\Inventory.cpp" />
     <ClCompile Include="ECS\Components\RemoveMe.cpp" />
+    <ClCompile Include="engine\GameInstance.cpp" />
+    <ClCompile Include="engine\GameWindow.cpp" />
+    <ClCompile Include="engine\graphics\Sprite.cpp" />
+    <ClCompile Include="engine\graphics\SpriteBatch.cpp" />
+    <ClCompile Include="engine\graphics\Texture.cpp" />
+    <ClCompile Include="events\InputMapper.cpp" />
+    <ClCompile Include="font\GFont.cpp" />
+    <ClCompile Include="font\GMessage.cpp" />
+    <ClCompile Include="gui\GBase.cpp" />
+    <ClCompile Include="gui\GButton.cpp" />
+    <ClCompile Include="gui\GMenu.cpp" />
+    <ClCompile Include="gui\GMenuItem.cpp" />
+    <ClCompile Include="gui\GPanel.cpp" />
+    <ClCompile Include="gui\GWidget.cpp" />
+    <ClCompile Include="item\Item.cpp" />
+    <ClCompile Include="item\ItemFactory.cpp" />
+    <ClCompile Include="item\Wieldable.cpp" />
     <ClCompile Include="map\Camera.cpp" />
     <ClCompile Include="map\Cell.cpp" />
     <ClCompile Include="map\gen\Dungeon.cpp" />
@@ -131,6 +155,10 @@
     <ClCompile Include="map\Map.cpp" />
     <ClCompile Include="map\TileSet.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="util\ExpressionParser.cpp" />
+    <ClCompile Include="util\Navigator.cpp" />
+    <ClCompile Include="util\Random.cpp" />
+    <ClCompile Include="util\Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ECS\Actor.h" />
@@ -146,6 +174,26 @@
     <ClInclude Include="ECS\Components\Items\GroundItem.h" />
     <ClInclude Include="ECS\Components\Items\Inventory.h" />
     <ClInclude Include="ECS\Components\RemoveMe.h" />
+    <ClInclude Include="engine\GameInstance.h" />
+    <ClInclude Include="engine\GameWindow.h" />
+    <ClInclude Include="engine\graphics\Sprite.h" />
+    <ClInclude Include="engine\graphics\SpriteBatch.h" />
+    <ClInclude Include="engine\graphics\Texture.h" />
+    <ClInclude Include="events\Custom_Events.h" />
+    <ClInclude Include="events\GameEvent.h" />
+    <ClInclude Include="events\InputMapper.h" />
+    <ClInclude Include="events\KeyMapping.h" />
+    <ClInclude Include="font\GFont.h" />
+    <ClInclude Include="font\GMessage.h" />
+    <ClInclude Include="gui\GBase.h" />
+    <ClInclude Include="gui\GButton.h" />
+    <ClInclude Include="gui\GMenu.h" />
+    <ClInclude Include="gui\GMenuItem.h" />
+    <ClInclude Include="gui\GPanel.h" />
+    <ClInclude Include="gui\GWidget.h" />
+    <ClInclude Include="item\Item.h" />
+    <ClInclude Include="item\ItemFactory.h" />
+    <ClInclude Include="item\Wieldable.h" />
     <ClInclude Include="map\Camera.h" />
     <ClInclude Include="map\Cell.h" />
     <ClInclude Include="map\gen\Dungeon.h" />
@@ -154,6 +202,10 @@
     <ClInclude Include="map\Map.h" />
     <ClInclude Include="map\TileSet.h" />
     <ClInclude Include="ThirdParty\json.hpp" />
+    <ClInclude Include="util\ExpressionParser.h" />
+    <ClInclude Include="util\Navigator.h" />
+    <ClInclude Include="util\Random.h" />
+    <ClInclude Include="util\Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
