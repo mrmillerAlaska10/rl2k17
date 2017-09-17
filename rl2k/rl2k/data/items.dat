@@ -1,0 +1,56 @@
+<monsters>
+<monster>
+	<info>
+	<name>Goblin</name>	
+	<sprite>1</sprite>
+	</info>
+	<monsterStat>
+	<level>1</level>
+		<health>10</health>
+	</monsterStat>
+	<actions>
+		<attack>
+			<damage>
+				<dice>
+					<count>2</count>
+					<size>2</size>
+				</dice>
+			</damage>
+			<element>bludgeoning</element>
+		</attack>
+		<move>normal</move>			
+		</actions>
+</monster>
+<monster>
+	<info>
+		<name>Mage</name>
+		<sprite>1</sprite>
+	</info>
+	<monsterStat>
+		<level>1</level>
+		<health>10</health>					
+	</monsterStat>
+	<actions>
+		<attack>
+			<damage>
+				<dice>
+					<count>1</count>
+					<size>2</size>
+				</dice>
+			</damage>
+			<element>bludgeoning</element>
+		</attack>
+		<attack>
+			<effect>
+				<status>blind</status>						
+				<dice>
+					<count>1</count>
+					<size>100</size>
+					<target>50</target>
+				</dice>
+			</effect>
+		</attack>
+		<move>normal</move>
+	</actions>
+</monster>
+</monsters>

@@ -111,7 +111,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ECS\Actor.cpp" />
+    <ClCompile Include="ECS\ActorEventManager.cpp" />
+    <ClCompile Include="ECS\blueprints\Spawner.cpp" />
+    <ClCompile Include="ECS\Components\aiController.cpp" />
+    <ClCompile Include="ECS\Components\Attachable.cpp" />
+    <ClCompile Include="ECS\Components\CombatStats.cpp" />
+    <ClCompile Include="ECS\Components\ComponentManager.cpp" />
+    <ClCompile Include="ECS\Components\Controller.cpp" />
+    <ClCompile Include="ECS\Components\Drawable.cpp" />
+    <ClCompile Include="ECS\Components\Entity.cpp" />
+    <ClCompile Include="ECS\Components\Items\GroundItem.cpp" />
+    <ClCompile Include="ECS\Components\Items\Inventory.cpp" />
+    <ClCompile Include="ECS\Components\RemoveMe.cpp" />
+    <ClCompile Include="map\Camera.cpp" />
+    <ClCompile Include="map\Cell.cpp" />
+    <ClCompile Include="map\gen\Dungeon.cpp" />
+    <ClCompile Include="map\Level.cpp" />
+    <ClCompile Include="map\Map.cpp" />
+    <ClCompile Include="map\TileSet.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ECS\Actor.h" />
+    <ClInclude Include="ECS\ActorEventManager.h" />
+    <ClInclude Include="ECS\blueprints\Spawner.h" />
+    <ClInclude Include="ECS\Components\aiController.h" />
+    <ClInclude Include="ECS\Components\Attachable.h" />
+    <ClInclude Include="ECS\Components\CombatStats.h" />
+    <ClInclude Include="ECS\Components\ComponentManager.h" />
+    <ClInclude Include="ECS\Components\controller.h" />
+    <ClInclude Include="ECS\Components\Drawable.h" />
+    <ClInclude Include="ECS\Components\Entity.h" />
+    <ClInclude Include="ECS\Components\Items\GroundItem.h" />
+    <ClInclude Include="ECS\Components\Items\Inventory.h" />
+    <ClInclude Include="ECS\Components\RemoveMe.h" />
+    <ClInclude Include="map\Camera.h" />
+    <ClInclude Include="map\Cell.h" />
+    <ClInclude Include="map\gen\Dungeon.h" />
+    <ClInclude Include="map\Level.h" />
+    <ClInclude Include="map\LevelState.h" />
+    <ClInclude Include="map\Map.h" />
+    <ClInclude Include="map\TileSet.h" />
+    <ClInclude Include="ThirdParty\json.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

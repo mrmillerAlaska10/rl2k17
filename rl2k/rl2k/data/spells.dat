@@ -1,0 +1,17 @@
+{
+    "magic missile": {
+        "name": "msgic missile",
+        "description": "launches a bolt of magic at an enemy, dealing damage",
+        "damage": "1d4",
+		
+    }
+	
+	"cure wounds": {
+        "name": "cure wounds",
+        "description": "focuses on the body, resotoring health",
+        "damage": "-1 * 5d4",
+		}
+}
+
+
+

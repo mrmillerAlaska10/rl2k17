@@ -1,0 +1,45 @@
+{
+    "shortbow": {
+        "name": "shortbow",
+        "description": "A bow with a light pull weight, making it easy to fire",
+        "projectile multiplier": "2",
+		"weight": 3,
+		"level": 1
+    },
+	
+	"longbow": {
+        "name": "longbow",
+        "description": "A tall bow used by professionals",
+        "projectile multiplier": "2.5",
+		"weight": 2,
+		"level": 5
+    },
+	
+	"greatbow": {
+        "name": "greatbow",
+        "description": "A powerful bow that is hard to weild. Those that can are capable of shooting incredibly powerful volleys",
+        "projectile multiplier": "3",
+		"weight": 7,
+		"level": 25
+    },
+	
+	"crossbow": {
+        "name": "crossbow",
+        "description": "An easy to use projectile weapon, its power is unpredictable",
+        "projectile multiplier": "1d4",
+		"weight": 7,
+		"level": 25
+    }
+	
+	"dartgun": {
+        "name": "dartgun",
+        "description": "A projectile weapon that shoots small darts from the mouth, it is easy to apply poison to the darts",
+        "projectile multiplier": "1.5",
+		"weight": 1,
+		"level": 7,
+		
+    }
+}
+
+
+

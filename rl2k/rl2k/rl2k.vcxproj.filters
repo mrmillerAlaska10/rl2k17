@@ -13,10 +13,153 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\map">
+      <UniqueIdentifier>{b1abeb2a-3afd-45af-997c-9daaaf1a6b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\map\gen">
+      <UniqueIdentifier>{8c91e3f2-83ed-4ff8-9553-dff5d70300cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS">
+      <UniqueIdentifier>{cd56b7bb-ffa6-4424-ac55-86d68d7e1d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\components">
+      <UniqueIdentifier>{9ca94074-f17d-480f-a133-c7007f08ece1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\components\items">
+      <UniqueIdentifier>{b65d6c23-90f7-4b26-9991-7ca6e26ee215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third party">
+      <UniqueIdentifier>{b43b321a-d7d7-478b-a829-cc20c98ad118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ECS\NewFilter1">
+      <UniqueIdentifier>{0e68f19a-6aa4-45f7-bcb7-9ae9d6fb9f4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="map\Camera.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="map\Cell.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="map\Level.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="map\Map.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="map\TileSet.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="map\gen\Dungeon.cpp">
+      <Filter>Source Files\map\gen</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Actor.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\ActorEventManager.cpp">
+      <Filter>Source Files\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\aiController.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Attachable.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\CombatStats.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\ComponentManager.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Controller.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Drawable.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Entity.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\RemoveMe.cpp">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Items\GroundItem.cpp">
+      <Filter>Source Files\ECS\components\items</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\Components\Items\Inventory.cpp">
+      <Filter>Source Files\ECS\components\items</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\blueprints\Spawner.cpp">
+      <Filter>Source Files\ECS\NewFilter1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="map\Camera.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\Cell.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\Level.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\LevelState.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\Map.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\TileSet.h">
+      <Filter>Source Files\map</Filter>
+    </ClInclude>
+    <ClInclude Include="map\gen\Dungeon.h">
+      <Filter>Source Files\map\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Actor.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\ActorEventManager.h">
+      <Filter>Source Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\aiController.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\Attachable.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\CombatStats.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\ComponentManager.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\controller.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\Drawable.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\Entity.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\RemoveMe.h">
+      <Filter>Source Files\ECS\components</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\Items\GroundItem.h">
+      <Filter>Source Files\ECS\components\items</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\Components\Items\Inventory.h">
+      <Filter>Source Files\ECS\components\items</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdParty\json.hpp">
+      <Filter>Source Files\third party</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\blueprints\Spawner.h">
+      <Filter>Source Files\ECS\NewFilter1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,21 @@
+{
+	"robe": {
+		"name": "robe",
+        "description": "a linen robe",
+		"evasion: 10",
+		"weight": 2,
+		"level": 1
+	},
+	"chain mail": {
+		"name": "chain mail",
+        "description": "a chain linked shirt particularly effective against arrows",
+		"armor: 2",
+		"weight": 4,
+		"level": 1
+		
+	},
+	
+	
+}
+
+

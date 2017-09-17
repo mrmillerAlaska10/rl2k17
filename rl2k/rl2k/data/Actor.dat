@@ -1,0 +1,11 @@
+<templates>
+<actor>
+	<Component name ="displayName">
+		<title>unnamed actor</title>
+	</Component>
+	<Component name="position">
+		<x>0</x>
+		<y>0</y>
+	</Component>
+</actor>
+</templates>

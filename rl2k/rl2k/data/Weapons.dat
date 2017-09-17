@@ -1,0 +1,22 @@
+[
+    {
+        "name": "sword",
+        "description": "a medium sized blade ideal for slashing",
+        "damage": "2d4",
+		"weight": 5,
+		"level": 1,
+		"category": "weapons",
+		"icon": 3
+    },
+	
+	{
+        "name": "arcane blade",
+        "description": "a ethereal blade formed from the power of the mind and will",
+        "damage": "0",
+		"weight": 5,
+		"level": 1,
+		"icon": 0,
+		"category": "weapons"
+	}
+]
+
